@@ -1,0 +1,89 @@
+
+main{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+
+#family{
+    
+    grid-column:1/2 ;
+    height: 80%;
+    width: 25%;
+    background-image: url(../images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#pair{
+    grid-column:2/3 ;
+    height: 80%;
+    width: 25%;
+    background-image: url(../images/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Benefactors{
+    grid-column:3/4 ;
+    height: 80%;
+    width: 25%;
+    background-image: url(../images/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img{
+    background-size: cover;
+}
+
+.containe {
+    position: relative;
+    width: 500px;
+    height: 542px;
+}
+ 
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: #898686; 
+    overflow: hidden;
+    width: 476px;
+    height: 0;
+    transition: .5s ease;
+}
+
+.containe:hover .overlay {
+    height: 100%;
+    opacity: 0.5;
+}
+
+.text {
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.target {
+    text-decoration: none;
+    background-color: #363535;
+    color: rgb(156, 253, 9);
+}
+
+#textw{
+    color: white;
+    float: right;
+    text-align: center;
+}
+

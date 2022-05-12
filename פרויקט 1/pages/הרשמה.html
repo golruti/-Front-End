@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>my trip</title>
+    <link rel="shortcut icon" href="../images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="formStyle.css">
+    <link rel="stylesheet" href="allStyle.css"  >
+    <div class="container"></div> 
+</head>
+<body>
+ 
+ 
+    <header>
+        <img src="../images/header.jpg" id="logo" alt="header" />
+        
+        <nav>
+            <div ><a href="index.html">בית</a></div>
+            <div ><a href="צפון.html">יום בצפון</a></div>
+            <div ><a href="דרום.html">יום בדרום</a></div> 
+            <div ><a href="אודות.html">אודות</a></div>
+            <div id="been"><a href="הרשמה.html" target="_blank">להרשמה</a></div>
+            <div ><a href="קופונים.html">קופונים</a></div>
+        </nav>   
+    </header>
+    <main>
+        <div class="send_order">
+        <div class="div2">
+        <h1>טופס רישום אלינו</h1>
+        <h3>יש למלא את כל השדות כדי שנוכל לענות לבקשתך</h3>
+      
+            <form action="./index.html" class="">
+                <input type="text" name="firstname" placeholder="שם פרטי" required><br>
+                <input type="text" name="lastname" placeholder="שם משפחה" required><br>
+                <input type="text" name="mail" placeholder="כתובת אמייל" required><br>
+                <input type="numbers" name="id" placeholder="מספר זהות"required><br>
+                <input list="trip" name="country" placeholder="בחר סוג טיול האהוב עליך" required><br>
+                <input type="numbers" name="phonm" placeholder="טלפון נייד" required><br>
+              
+                <div>
+                    <input type="checkbox" name="level">
+                    <label for="level">אני רוצה לקבל עדכונים למייל</label>
+                </div>
+    
+                <datalist id="trip" >
+                    <option value="אתגרי"></option>
+                    <option value="רטוב"></option>
+                    <option value="אטרקציה"></option>
+                    <option value="מסלול"></option>
+                </datalist>
+                <input type="submit" value="שלח">
+           
+    </main>
+    <footer>
+        <a href="אודות.html" >אודות</a>
+            <p class="line"> &nbsp &nbsp | &nbsp &nbsp </p>
+            <a href="הרשמה.html" >להרשמה</a>
+            <p class="line"> &nbsp &nbsp | &nbsp &nbsp </p>
+            <a href="tel:035757577">צור קשר</a>
+            <p class="line"> &nbsp &nbsp | &nbsp &nbsp </p>
+            <p style>טלפון : 03-3657535
+
+        <p>
+            כל הזכויות שמורות &copy; tamar
+        </p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+
+main{  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+
+
+#family{
+
+    height: 80%;
+    width: 25%;
+    background-image: url(../images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+
+}
+#pair{
+    height: 80%;
+    width: 25%;
+    background-image: url(../images/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Benefactors{
+   
+    height: 80%;
+    width: 25%;
+    background-image: url(../images/לגור\ שם.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img{
+    background-size: cover;
+}
+
+.containe {
+    position: relative;
+    height: 542px;
+}
+ 
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: #898686; 
+    overflow: hidden;
+    width: 476px;
+    height: 0;
+    transition: .5s ease;
+}
+
+.containe:hover .overlay {
+    height: 100%;
+    opacity: 0.5;
+}
+
+.text {
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.target {
+    text-decoration: none;
+    background-color: #363535;
+    color: rgb(156, 253, 9);
+}
+
+#textw{
+    color: white;
+    float: right;
+    text-align: center;
+}
+.ipad-link{
+color: black;
+display: none;
+}
+@media screen and (max-width:768px)
+{.ipad-link{
+    display: flex;
+    padding-top: 100%;
+    padding-right: 40%;
+ }
+ .overlay{
+     display: none;
+ }
+}
+
+

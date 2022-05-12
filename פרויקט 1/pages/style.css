@@ -1,0 +1,80 @@
+
+
+*{
+    font-family: Art;
+}
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#text{
+    text-align:center;
+    font-size:20px;
+    padding-bottom: 50px;
+
+}
+
+.picture-home {
+    margin: auto;
+    margin-top: 4%;
+    width: 50vw;
+    height: 55vh;
+    z-index:-1;
+    background-size: 100% 100%;
+    position: relative;
+    animation-name: picture-home;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes picture-home {
+    0% {  
+         background-image: url('../images/1.jpg');
+    }
+
+    20% {
+        background-image: url('../images/2.jpg');
+    }
+
+    40% {
+        background-image: url('../images/3.jpg');
+    }
+
+    60% {
+        background-image: url('../images/4.jpg');
+    }
+
+    80% {
+        background-image: url('../images/5.jpg');
+    }
+
+    100% {
+        background-image: url('../images/דרך\ של\ צבעים.jpg');
+    }
+
+}
+    
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  td, th {
+    border: 1px solid rgba(220, 255, 250, 0.616);
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #bdc4c4;
+  }
+  
+
+
+  

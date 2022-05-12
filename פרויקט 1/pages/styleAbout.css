@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+
+.content_video {
+    top: 15vh;
+    height: 60vh;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: black;
+    width: 100%;
+    padding: 20px;
+}
+
+#text{
+    text-align:center;
+    color: white;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    font-size:25px ;
+    line-height: 150%;
+    margin-top: 5%;
+}

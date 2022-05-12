@@ -1,0 +1,37 @@
+.send_order {
+    width: 70vw;
+    height: 85vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: auto;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+.div2
+  {
+     margin-right:35vh;
+ }
+
+
+.lastsub {
+    position: relative;
+    right: 27vw;
+    margin: 0.2%;
+    padding: 1.5%;
+    border: none;
+    border-radius: 8px;
+    background-color: #02f10e;
+    color: white;
+    border-color: black;
+    margin-bottom: 5vh;
+}
+
+.picture{
+    height: 2vh;
+}
+
+input{
+    margin: 2%;
+    padding: 1.5%;
+   
+}
