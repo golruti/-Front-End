@@ -1,0 +1,148 @@
+
+@font-face {
+    font-family: myFont;
+    src: url(font/segoepr.ttf);
+}
+
+.page{
+    display: none;
+    width: 100%;
+    min-height: 100%; /* allow for content off the bottom of the page */
+    position: fixed;  /* or absolute if the user needs to scroll for more content */
+    padding: 1rem 2rem;
+}
+
+.active{
+    display: block; 
+}
+
+body{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+        font-family: myfont,Arial, Helvetica, sans-serif;
+}
+
+.task{
+
+    width: 1850px;
+
+    margin: 0.5rem;
+  background: white;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  transition: all 300ms;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+}
+li{
+      list-style-type: none;
+      min-height: 20vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.input{
+  border: none;
+  color: black;
+  padding: 0.8rem;
+  margin: 0.4rem;
+  font-size: 5 rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
+}
+
+.input-btn{
+  border: none;
+  color: white;
+  padding: 0.8rem;
+  margin: 0.4rem;
+  font-size: 5 rem;
+  outline: none;
+  background: rgba(37, 37, 37, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
+}
+
+
+
+
+
+a:link, a:visited ,#add-task-button,#task-button,button{
+  border: none;
+    font-size: 2 rem;
+    margin: 0.2rem;
+    padding: 0.7rem;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0;
+    color: #fcf8f8;
+    transition: all 400ms;
+    transition-timing-function: ease;
+    background: rgba(61, 61, 61, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #5c6663
+
+}
+
+p,h1,textarea {
+  border: none;
+  font-size: 2 rem;
+  margin: 0.2rem;
+  padding: 0.7rem;
+  outline: none;
+  cursor: pointer;
+  color: #4b4040;
+  transition: all 400ms;
+  transition-timing-function: ease;
+
+  }
+
+
+p{
+  font-size: 48px;
+}
+ 
+  
+ form{
+    padding-right: 400px;
+    margin-right: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #task-header,#task-button,#task-body{
+    padding-left: 500px;
+  }
+
+  .task-button{
+    display: flex;
+    flex-direction: left;
+ 
+  }
+
+  h1{
+    
+    width: 500PX;
+  }
+
+  p{
+    width: 1100px;
+  }

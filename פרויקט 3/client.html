@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="client.css">
+    <title>To Do list</title>
+</head>
+
+<body>
+
+    <div class="page active" id="sign-in">
+        
+            <ol>
+                <li><a href="#" data-target="sign-up" class="nav-link">sign-up</a></li>
+            </ol>
+            <form onsubmit="signIn(event)">
+                <input type="text" placeholder="Your Username" class="input" id="sign-in-name" required>
+                <input type="password" placeholder="Your password" class="input" id="sign-in-password" required>
+                <button type="submit" class="input-btn" id="singInOk" >sign in</button>
+            </form>
+    
+    </div>
+
+    <div class="page singUp " id="sign-up">
+        <ol>
+            <li><a href="#" data-target="sign-in" class="nav-link">sign-in</a></li>
+        </ol>
+        <form id="sign-up-style" onsubmit="signUp(event)">
+            <input required type="text" placeholder="Your Username" class="input" id="sign-up-name" >
+            <input required type="password" placeholder="Your password" class="input" id="sign-up-password" >
+            <button type="submit" class="input-btn" id="singUpOk">sign up</button>
+        </form>
+    </div>
+
+    <div class="page list" id="list">
+        <ol>
+            <li><a href="#" data-target="sign-in" class="nav-link" onclick="logOut()">log-out</a></li>
+        </ol>
+
+        <button class="list-btn" id="add-task-button" onclick="addTask()">add new task</button>
+
+        <div id="displayTasks"></div>
+    </div>
+
+    <script src="js/dbApi.js"></script>
+    <script src="js/server.js"></script>
+    <script src="js/FAJAX.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/spa.js"></script>
+</body>
+
+</html>
