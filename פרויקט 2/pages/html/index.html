@@ -1,0 +1,253 @@
+<area shape="rect" coords="900,390,850,230" alt="pitcher" onclick="findelement(event)">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style/style.css">
+
+  <title>page</title>
+  
+</head>
+
+
+
+
+<body id="game" onload="Game()">
+
+  
+  <div class="board-game" id="boardGame2">
+
+    <div class="rightSide">
+      <div class="listOf">
+        <p class="word">drum</p>
+        <p class="word">pitcher</p>
+        <p class="word">mask</p>
+        <p class="word">clock</p>
+        <p class="word">butterfly</p>
+        <p class="word">cage</p>
+        <p class="word">scissors</p>
+        <p class="word">hourglass</p>
+        <p class="word">skirt</p>
+        <p class="word">jewelry bag</p>
+        <p class="word">picture</p>
+        <p class="word">glass box</p>
+      </div>
+    
+      <div class="timer"></div>
+      <div class="buttons">
+        <form action="../html/index.html">
+          <input type="submit" value="return to begining" class="submit"  style="padding:25px;">
+        </form>
+
+        <form action="../html/homePage.html">
+          <input type="submit" value="home" class="submit" style="padding-left: 110px; padding-top: 0;">
+        </form>
+
+      </div>
+    </div>
+
+    
+    <div >
+      <img src="../../image/4.jpg" usemap="#4" class="images">
+     
+      
+
+      <div id="points"></div>
+
+      <map name="4">
+        <area shape="rect" coords="197,340,110,260" alt="drum" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="1160,330,1220,550" alt="pitcher" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="1530,700,1385,570" alt="mask" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="1570,95,1530,240" alt="clock" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="950,390,880,320" alt="butterfly" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="460,330,540,115" alt="cage" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="1010,500,1100,530" alt="scissors" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="380,230,320,390" alt="hourglass" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="680,390,750,350" alt="skirt" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="1020,690,1100,580" alt="jewelry bag" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="160,150,90,20" alt="picture" onclick="findelement(event);animations(event)">
+        <area shape="rect" coords="1180,85,1270,220" alt="glass box" onclick="findelement(event);animations(event)">
+      </map>
+    </div>
+
+  </div>
+
+  <div class="board-game" id="boardGame3">
+    <div class="rightSide">
+      <div class="listOf">
+        <p class="word">cat</p>
+        <p class="word">house</p>
+        <p class="word">scroll</p>
+        <p class="word">teaPot</p>
+        <p class="word">phonograph</p>
+        <p class="word">Shoes</p>
+        <p class="word">Watch</p>
+        <p class="word">Cup of tea</p>
+        <p class="word">test tube</p>
+        <p class="word">ball</p>
+        <p class="word">handcuffs</p>
+        <p class="word">Hourglass</p>
+      </div>
+
+      <div class="timer"></div>
+      <div class="buttons">
+        <form action="../html/index.html">
+          <input type="submit" value="return to begining" class="submit"  style="padding:25px;">
+        </form>
+
+        <form action="../html/homePage.html">
+          <input type="submit" value="home" class="submit" style="padding-left: 110px; padding-top: 0;">
+        </form>
+
+      </div>
+
+    </div>
+    <div >
+      <img src="../../image/1.jpg" usemap="#1" class="images">
+
+
+      <map name="1">
+        <area shape="rect" coords="730,350,800,600" alt="cat" onclick="findelement(event)">
+        <area shape="rect" coords="1200,400,1300,550" alt="house" onclick="findelement(event)">
+        <area shape="rect" coords="300,600,500,750" alt="scroll" onclick="findelement(event)">
+        <area shape="rect" coords="150,350,250,450" alt="teaPot" onclick="findelement(event)">
+        <area shape="rect" coords="530,130,650,300" alt="phonograph" onclick="findelement(event)">
+        <area shape="rect" coords="650,750,760,850" alt="Shoes" onclick="findelement(event)">
+        <area shape="rect" coords="70,600,170,800" alt="Watch" onclick="findelement(event)">
+        <area shape="rect" coords="350,850,430,900" alt="Cup of tea" onclick="findelement(event)">
+        <area shape="rect" coords="900,40,945,110" alt="test tube" onclick="findelement(event)">
+        <area shape="rect" coords="280,250,310,280" alt="ball" onclick="findelement(event)">
+        <area shape="rect" coords="232,50,270,160" alt="handcuffs" onclick="findelement(event)">
+        <area shape="rect" coords="620,400,660,520" alt="Hourglass" onclick="findelement(event)">
+      </map>
+    </div>
+
+  </div>
+  <div class="board-game" id="boardGame4">
+    <div class="rightSide">
+      <div class="listOf">
+        <p class="word">watterMelone</p>
+        <p class="word">telefone</p>
+        <p class="word">crab</p>
+        <p class="word">kettle</p>
+        <p class="word">pepper</p>
+        <p class="word">cashbox</p>
+        <p class="word">Candy jar</p>
+        <p class="word">weight</p>
+        <p class="word">fire</p>
+        <p class="word">pottery urn</p>
+        <p class="word">chair</p>
+        <p class="word">rolls</p>
+      </div>
+      <div class="timer"></div>
+      <div class="buttons">
+        <form action="../html/index.html">
+          <input type="submit" value="return to begining" class="submit" style="padding:25px;">
+        </form>
+
+        <form action="../html/homePage.html">
+          <input type="submit" value="home" class="submit" style="padding-left: 110px; ">
+        </form>
+
+      </div>
+    </div>
+    <div id="image1">
+      <img src="../../image/5.jpg" usemap="#5" class="images" >
+      <div id="dark1" onmouseover="light(event)"></div>
+      <img src="../../image/5.jpg" usemap="#5" class="images" >
+
+      <map name="5">
+        <area shape="rect" coords="420,640,500,560" alt="watterMelone" onclick="findelement(event)">
+        <area shape="rect" coords="620,320,670,200" alt="telefone" onclick="findelement(event)">
+        <area shape="rect" coords="590,900,715,800" alt="crab" onclick="findelement(event)">
+        <area shape="rect" coords="720,660,690,580" alt="kettle" onclick="findelement(event)">
+        <area shape="rect" coords="1200,0,1250,90" alt="pepper" onclick="findelement(event)">
+        <area shape="rect" coords="910,300,1000,490" alt="cashbox" onclick="findelement(event)">
+        <area shape="rect" coords="120,180,40,35" alt="Candy jar" onclick="findelement(event)">
+        <area shape="rect" coords="420,280,320,550" alt="weight" onclick="findelement(event)">
+        <area shape="rect" coords="1360,420,1300,500" alt="fire" onclick="findelement(event)">
+        <area shape="rect" coords="880,260,950,180" alt="pottery urn" onclick="findelement(event)">
+        <area shape="rect" coords="620,360,700,580" alt="chair" onclick="findelement(event)">
+        <area shape="rect" coords="250,400,110,450" alt="rolls" onclick="findelement(event)">
+      </map>
+    </div>
+
+  </div>
+
+
+
+  <div class="board-game" id="boardGame5">
+
+
+    <div class="rightSide">
+      <div class="listOf">
+        <p class=word>music Box</p>
+        <p class=word>bell</p>
+        <p class=word>Catching mouse</p>
+        <p class=word>candle</p>
+        <p class=word>crystal ball</p>
+        <p class=word>parrot</p>
+        <p class=word>Mirror</p>
+        <p class=word>Golden eggs</p>
+        <p class=word>snake</p>
+        <p class=word>Image</p>
+        <p class=word>kettle</p>
+        <p class=word>bowl</p>
+      </div>
+    
+      <div class="timer"></div>
+      <div class="buttons">
+        <form action="../html/index.html">
+          <input type="submit" value="return to begining" class="submit"  style="padding:25px;">
+        </form>
+
+        <form action="../html/homePage.html">
+          <input type="submit" value="home" class="submit" style="padding-left: 110px; padding-top: 0;">
+        </form>
+
+      </div>
+    </div>
+
+    
+    <div id="image2">
+      <img src="../../image/2.jpg" usemap="#6" class="images">
+      <div id="dark2" onmouseover="light(event)"></div>
+      <img src="../../image/2.jpg" usemap="#6" class="images">
+
+
+      <map name="6">
+        <area shape="rect" coords="1300,520,1450,720" alt="music Box" onclick="findelement(event)">
+        <area shape="rect" coords="1070,220,1200,350" alt="bell" onclick="findelement(event)">
+        <area shape="rect" coords="420,565,585,635" alt="Catching mouse" onclick="findelement(event)">
+        <area shape="rect" coords="710,300,755,400" alt="candle" onclick="findelement(event)">
+        <area shape="rect" coords="310,255,480,385" alt="crystal ball" onclick="findelement(event)">
+        <area shape="rect" coords="1040,160,1100,215" alt="parrot" onclick="findelement(event)">
+        <area shape="rect" coords="1050,0,1200,150" alt="Mirror" onclick="findelement(event)">
+        <area shape="rect" coords="180,500,280,440" alt="Golden eggs" onclick="findelement(event)">
+        <area shape="rect" coords="80,555,260,610" alt="snake" onclick="findelement(event)">
+        <area shape="rect" coords="1500,150,1600,280" alt="Image" onclick="findelement(event)">
+        <area shape="rect" coords="0,285,160,380" alt="kettle" onclick="findelement(event)">
+        <area shape="rect" coords="555,465,455,385" alt="bowl" onclick="findelement(event)">
+      </map>
+    </div>
+
+  </div>
+  <div id="aylana" style="display:none"></div>
+
+<img src="../../image/שלב.png" alt="massage" id="massage" style="display:none">
+<img src="../../image/lost.png" alt="massage" id="lost" style="display:none">
+<img src="../../image/winner.png" alt="winner" id="winner" style="display: none;">
+<form action="../html/homePage.html">
+  <input type="submit" value="return the home page" id="winbuttton" class="submit" style="position: absolute; display: none; ">
+</form>
+<audio src="../../mp3/gift_back_sent.ogg" id="findVoice"></audio>
+<audio src="../../mp3/levelPassed.mp3" id="nextVoice"></audio>
+<audio src="../../mp3/levelPassed.mp3" id="winVoice"></audio>
+<audio src="../../mp3/levelLost.mp3" id="lostVoice"></audio>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

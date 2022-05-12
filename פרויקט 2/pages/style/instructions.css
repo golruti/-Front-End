@@ -1,0 +1,28 @@
+img{
+    width:1700px;
+    height: 700px;
+    background-image: url(../../image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 7.5%; 
+    padding-bottom: 7.5%;
+ 
+}
+
+
+.submit{
+    cursor: pointer;
+    color: rgb(122, 63, 7);
+    background-color:rgba(66, 38, 9, 0);
+    font-family: 'Monotype corsiva';
+    font-size:60px;
+    margin-left: 800px;
+    text-align: center;
+    margin-top: 720px;  
+    text-decoration: none;
+    border:none;
+
+}

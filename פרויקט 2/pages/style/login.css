@@ -1,0 +1,180 @@
+
+
+*{
+  font-family: 'Monotype corsiva';
+  
+}
+
+body {
+	margin: 0;
+	padding: 0;
+  background-image: url("../../image/1.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#index{
+	display: none;
+}
+
+.login-form {
+    left:35%;
+}
+
+.signUp-form{
+    right: 25%;
+}
+
+.login-form , .signUp-form{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.front-face {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #552c0a;
+	transition: width 0.2s ease-in-out;
+	z-index: 2;
+}
+.login-form:hover .front-face, 
+.login-form.focused .front-face , .signUp-form:hover .front-face, 
+.signUp-form.focused .front-face{
+	width: 30px;
+}
+
+.front-face>.text {
+	font-size: 3rem;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 300px;
+	transition: all 0.2s ease-in-out
+}
+.login-form:hover .front-face .text,
+.login-form.focused .front-face .text,
+.signUp-form:hover .front-face .text,
+.signUp-form.focused .front-face .text
+ {
+	font-size: 1rem;
+	transform: rotate(-90deg);
+}
+.login-form form, .signUp-form form {
+	width: 200px;
+	margin: 0 auto;
+}
+.login-form form .input, .signUp-form form .input {
+	width: 100%;
+	height: 50px;
+	border:0;
+	border-bottom:2px solid #552c0a;
+	color: #552c0a;
+	outline: none;
+}
+.input-btn {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	z-index: 1;
+	background-color: #552c0a;
+	border-radius: 80%;
+	outline: none;
+	border:5px solid transparent;
+	transition: all 0.2s ease-in-out;
+}
+.input-btn:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid #fff;
+	border-bottom: 30px solid transparent;
+	left: -17px;
+	top: 5px;
+	transform: rotate(45deg);
+	transition: all 0.2s ease-in-out;
+}
+.input-btn:hover,
+.input-btn:focus,
+.input-btn:active
+ {
+	background-color: #fff;
+	border:5px solid #552c0a;
+}
+.input-btn:hover:after,
+.input-btn:focus:after,
+.input-btn:active:after
+{
+	border-right: 30px solid #552c0a;
+}
+.login-form .front-face .loader,  .signUp-form .front-face .loader{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 2px solid rgb(228, 220, 220);
+	margin: 75px 76px;
+	animation: load 2s linear infinite;
+
+}
+.login-form .front-face .loader:after , .signUp-form .front-face .loader:after {
+	content: "";
+	position: absolute;
+    top: -11px;
+    left: 67px;	
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 80%;
+
+}
+
+.login-form.loading .front-face .text, .signUp-form.loading .front-face .text  {
+	display: none;
+}
+.login-form.loading .front-face,  .signUp-form.loading .front-face{
+	width: 100%;
+}
+.login-form.loading .loader , .signUp-form.loading .loader{
+	display: block;
+}
+
+@keyframes load {
+	50% {
+		opacity: 0.5%
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+
+
